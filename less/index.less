@@ -1,0 +1,205 @@
+//index中要用到的样式
+
+@import "zcm.less";
+
+header{
+   color:#fff;
+   a {color:#fff;}
+   .fs(30);
+   .h(94);
+   background-color: #FA3432;
+  .flex_b();
+  .pl(18);
+  .pr(30);
+   
+   .logo{
+       h1{.fs(30);}
+       a{display: flex; align-items: center;}
+       img{ .w(47);.h(49);.mr(10);}
+   }
+}
+
+.topnav{
+    .h(86);background-color: #fff;
+    a{color:#4b4a4a;}
+    .flex_a();
+    .fs(24);
+    .current{color:#ff3636;}
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .swipe-wrap > div {
+      float:left;
+      width:100%;
+      position: relative;
+    }
+    
+    img{ /*让图片100%*/
+        width: 100%;  
+    }
+    
+    .indirector{
+        position: absolute;
+        bottom:20px;
+        left:50%;transform: translateX(-50%);
+    }
+    .indirector span{
+        display: inline-block;margin: 3px;
+        width: 10px;height: 10px;border-radius: 50%;
+        background-color: #fff;
+    }
+    .indirector span.on{
+        background-color: red;
+    }
+}
+
+.usernav{
+    .iconfont{
+        margin:0 auto;
+        .mb(10);color:#fff;.fs(50);.h(90);.w(90);border-radius:30% ;display: block;.tc();
+    .lh(90);}
+    .icon-suo{background-color: #4099E9;}
+    .icon-women{background-color: #FB6361;}
+    .icon-xinshouzhiyin{background-color: #40C8B0;}
+    .icon-wenti{background-color: #FFAE28;}
+    
+    .fs(24);
+    .h(200);
+    
+    .flex_a();
+    
+    background-color: #fff;
+    a{color:#808080;}
+}
+
+section .title{
+        .fs(30);
+        .h(95);
+        .flex_b();
+        h3{ 
+            .w(250);
+            .h(46);
+            .lh(46);
+            .pl(60);
+           
+        
+        }
+        //background-size:46px 46px;
+        a{
+            color:#9a9b9c;
+        }
+    }
+.hotproducts{
+    border-top:1px solid #ddd;
+    background: #f9f9f9;
+    .pl(23);
+    .pr(23);
+    .title{
+       h3{ 
+         background: url("../img/home_ico_09.png") no-repeat ; 
+        .bs(46,46);
+       }
+    }
+    
+    .item{
+        .h(255);
+        .mb(25);
+        border:1px solid #ddd;
+        background-color: #fff;
+        .p(25);
+        .item-title{
+            .flex_b();
+            h4{.fs(28);color:#494848};
+            i{.h(30);.lh(30);border-radius: 10%; display: inline-block; color:#fff;.fs(20);.tc();}
+            .cash{.w(85); .h(30);background-color: #ffAB37;color:#fff;}
+            .icon-vip{.w(33); ;background-color: #ff7404;}
+        }
+        .data{
+            .mt(27);
+            display: flex;
+            align-items: center;
+            .data1{
+                .ml(43);
+                strong{color:#FB4034;.fs(38);}
+                em{color:#ff7900;.fs(24);}
+            }
+            .data2{
+                line-height: 1.2;
+                .ml(87);
+                .fs(30);
+                color:#9a9b9c;
+                strong{color:#3d3c3c;}
+            }
+            .data3{
+                .ml(56);
+                img{ .w(140);.h(140)}
+            }
+        }
+    }
+}
+
+.news{
+    background-color: #fff;
+    .mb(23);
+    .title{
+        .pl(23);
+        .pr(23);
+       h3{ 
+            background: url("../img/home_ico_10.png") no-repeat ;
+            .bs(46,46); 
+       }
+    }
+    .itemlist{
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        .pt(35);
+        .pl(23);
+        .pr(23);
+        .item{
+            .mb(25);
+            a{
+                display: flex;
+                img{
+                    flex:0 0 auto;
+                    .w(110);
+                    .h(110);
+                    border-radius: 20%;
+                    .mr(23);
+                }
+                div{
+                    flex:1 1 auto;
+                    h4{.pt(10); color:#494848;.fs(28);.mb(25);}
+                    p{color:#9a9b9c;.fs(24);
+                       .flex_b();
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+footer{
+    line-height: 2;
+    .tc();
+    background-color: #fff;
+    .h(165);
+    .pt(45);
+    border-top:1px solid #ddd;
+    
+    .links{
+        a{color:#494848;}
+        .fs(28);
+    }
+    .copyright{
+        color:#9a9b9c;
+        .fs(26);
+    }
+}
